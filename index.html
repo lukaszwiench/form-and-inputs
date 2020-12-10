@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <title>Fieldsety, inputy i checkboxy</title>
+  </head>
+  <body>
+    <main>
+      <h1>formularze</h1>
+      <form class="form">
+        <fieldset>
+          <legend>Adress - placeholders</legend>
+          <p>
+            <label>Street name:</label>
+            <input
+              class="form__item"
+              id="streetName"
+              placeholder="Please enter your street name"
+              name="sreetName"
+            />
+          </p>
+          <p>
+            <label>City:</label>
+            <input
+              class="form__item"
+              id="cityName"
+              placeholder="Please enter your city name"
+              name="cityName"
+            />
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Favourite icecream flavour - radio button</legend>
+          <p>
+            <label
+              ><input
+                type="radio"
+                name="iceCream"
+                value="Chocolate"
+              />Chocolate</label
+            >
+          </p>
+          <p>
+            <label
+              ><input
+                type="radio"
+                name="iceCream"
+                checked
+                value="lemon"
+              />lemon</label
+            >
+          </p>
+          <p>
+            <label
+              ><input
+                type="radio"
+                name="iceCream"
+                value="strawberry"
+              />strawberry</label
+            >
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>checkbox</legend>
+          <p>
+            <label>
+              <input type="checkbox" name="agreement" value="agree" />zgadzam
+              się</label
+            >
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Numbers & emails</legend>
+          <label
+            >Favourite number
+            <p>
+              <input
+                class="form__item"
+                id="favouriteNumber"
+                placeholder="Please enter your favourite number"
+                name="favouriteNumber" type="number"
+              />
+            </p>
+          </label>
+          <label
+          >Phone number
+          <p>
+            <input
+              class="form__item"
+              id="phoneNumber"
+              placeholder="Please enter your favourite number"
+              name="phoneNumber" type="tel"
+            />
+          </p>
+          <label
+          >E-mail:
+          <p>
+            <input
+              class="form__item"
+              id="emailAdress"
+              placeholder="Please enter your favourite number"
+              name="emailAdress" type="email"
+            />
+          </p>
+        </label>
+        </fieldset>
+        <fieldset>
+          <legend>
+            Range
+          </legend>
+          <label
+          >range:
+          <p>
+            <input
+              class="form__item"
+              id="range"
+              placeholder=""
+              name="range" type="range" min="0" max="100" step="10"
+            />
+          </p>
+        </label>
+        </fieldset>
+        <fieldset>
+          <legend>Password:</legend>
+          <label
+          >Password:
+          <p>
+            <input
+              class="form__item"
+              id="Password"
+              placeholder="Please enter your password"
+              name="Password" type="password" 
+            />
+          </p>
+        </label>
+        </fieldset>
+        <fieldset>
+          <legend>
+            Files
+          </legend>
+          <label
+          >Files
+          <p>
+            <input
+              class="form__item"
+              id="file"
+              placeholder="Please enter your password"
+              name="file" type="file" 
+            />
+          </p>
+        </label>
+        </fieldset>
+        <fieldset>
+         <legend>
+           Select 
+         </legend> 
+          <label for="band"
+          >Select - Pick one band: </label>
+          <select name="band" id="band">
+            <option value="band-1">Radiohead</option>
+            <option value="band-2">Metallica</option>
+            <option value="band-3">Nirvana</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>
+            Textarea
+          </legend>
+          <label for="yourStory">Your story:</label>
+          <textarea id="yourStory" name="yourStory">
+            nigguh
+          </textarea>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
